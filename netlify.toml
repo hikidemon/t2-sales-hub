@@ -1,24 +1,21 @@
-# Netlify Configuration for T2 Sales Hub
-# This file configures the build and deployment settings for Netlify
+# Netlify Configuration for T2 Sales Hub (Monorepo with pnpm)
+# Build from repo root with pnpm workspace filter
 
 [build]
-  # Build command for the frontend (Vite + React)
+  # Build from repo root using pnpm workspace filter
   command = "pnpm --filter @t2-sales-hub/web run build"
-  # Output directory for the built files
+  # Output directory relative to repo root
   publish = "apps/web/dist"
-  # Base directory for the build
-  base = "apps/web"
+  # Base directory is repo root (where pnpm-workspace.yaml lives)
+  base = "."
 
 [build.environment]
-  # Node.js version
   NODE_VERSION = "20"
-  # PNPM version
-  PNPM_VERSION = "8"
-  # Enable pnpm
-  PNPM_ENABLE = "true"
+  PNPM_VERSION = "9"
+  ENABLE_PNPM = "true"
 
 [build.processing]
-  # Skip processing for SPA (single page application)
+  # SPA: no HTML rewriting, React Router handles routing
   skip_processing = true
 
 [[redirects]]
@@ -28,19 +25,12 @@
   status = 200
 
 [functions]
-  # API functions directory (if needed for serverless functions)
   directory = "netlify/functions"
 
 [edge_functions]
-  # Edge functions directory (if needed)
   directory = "netlify/edge-functions"
 
-# Build plugins
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  # Not needed for Vite, but keeping for reference
-
-# Headers for security and caching
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -49,7 +39,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-# Caching for static assets
+# Cache static assets
 [[headers]]
   for = "/assets/*"
   [headers.values]
@@ -59,8 +49,3 @@
   for = "/favicon.svg"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
-# Build environment variables (set in Netlify dashboard)
-# [build.environment]
-#   VITE_API_URL = "https://your-api-domain.com/api"
-#   NODE_ENV = "production"
