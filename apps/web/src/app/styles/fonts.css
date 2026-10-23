@@ -1,0 +1,47 @@
+/*
+ * Font tokens.
+ *
+ * The T2 brand typefaces are licensed, so they are referenced by name and
+ * resolved from the local system when installed. The fallback stack keeps
+ * the layout stable when they are absent.
+ *
+ *   T2 Rooftop          — body copy (regular / medium)
+ *   T2 Halvar Breit     — headings (ExtraBold)
+ *
+ * To use the official fonts, drop the licensed webfont files into
+ * `apps/web/public/fonts/`, add the @font-face rules below and uncomment
+ * them. The CSS variable names stay the same.
+ */
+
+:root {
+  --font-sans:
+    'T2 Rooftop', 'Rooftop', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'T2 Halvar Breit', 'Halvar Breitschrift', 'T2 Halvar Breitschrift', Inter, system-ui,
+    -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+}
+
+/*
+@font-face {
+  font-family: 'T2 Rooftop';
+  src: url('/fonts/T2Rooftop-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'T2 Rooftop';
+  src: url('/fonts/T2Rooftop-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'T2 Halvar Breit';
+  src: url('/fonts/T2HalvarBreit-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+*/

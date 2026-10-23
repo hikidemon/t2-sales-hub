@@ -1,0 +1,380 @@
+[
+  {
+    "file": "г. Новосибирск, пр. Карла Маркса, д.7 (1).xlsx",
+    "sheets": [
+      {
+        "title": "ПРАВИЛА ВЕДЕНИЯ",
+        "max_row": 35,
+        "max_column": 15,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "график",
+        "max_row": 15,
+        "max_column": 53,
+        "formulas": 71,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Лист_продаж",
+        "max_row": 622,
+        "max_column": 111,
+        "formulas": 6562,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "ЗП",
+        "max_row": 24,
+        "max_column": 37,
+        "formulas": 381,
+        "keyword_headers": [
+          ["A7", "План на сотрудника"],
+          ["C14", "ФИО"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "импорт",
+        "max_row": 500,
+        "max_column": 32,
+        "formulas": 714,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Продажи_день",
+        "max_row": 30,
+        "max_column": 16,
+        "formulas": 93,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Видеомониторинг",
+        "max_row": 74,
+        "max_column": 60,
+        "formulas": 204,
+        "keyword_headers": [
+          ["C3", "Ф.И.О."],
+          ["C16", "ФИО"],
+          ["C34", "Ф.И.О."],
+          ["C47", "ФИО"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль Аладдин+РТК",
+        "max_row": 300,
+        "max_column": 17,
+        "formulas": 98,
+        "keyword_headers": [
+          ["H1", "ФИО клиента"],
+          ["J1", "Сотрудник"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль_МНП",
+        "max_row": 300,
+        "max_column": 12,
+        "formulas": 0,
+        "keyword_headers": [
+          ["E1", "Фио абонента"],
+          ["G1", "Сотрудник"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Проверки ТхВ",
+        "max_row": 704,
+        "max_column": 27,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Буфер ВМР ",
+        "max_row": 1000,
+        "max_column": 84,
+        "formulas": 1104,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль_Сим",
+        "max_row": 19,
+        "max_column": 43,
+        "formulas": 98,
+        "keyword_headers": [],
+        "personal_samples": []
+      }
+    ]
+  },
+  {
+    "file": "г. Новосибирск, пр. Карла Маркса, д.7.xlsx",
+    "sheets": [
+      {
+        "title": "ПРАВИЛА ВЕДЕНИЯ",
+        "max_row": 35,
+        "max_column": 15,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "график",
+        "max_row": 15,
+        "max_column": 53,
+        "formulas": 71,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Лист_продаж",
+        "max_row": 622,
+        "max_column": 111,
+        "formulas": 6562,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "ЗП",
+        "max_row": 24,
+        "max_column": 37,
+        "formulas": 381,
+        "keyword_headers": [
+          ["A7", "План на сотрудника"],
+          ["C14", "ФИО"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "импорт",
+        "max_row": 500,
+        "max_column": 32,
+        "formulas": 714,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Продажи_день",
+        "max_row": 30,
+        "max_column": 16,
+        "formulas": 93,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Видеомониторинг",
+        "max_row": 74,
+        "max_column": 60,
+        "formulas": 204,
+        "keyword_headers": [
+          ["C3", "Ф.И.О."],
+          ["C16", "ФИО"],
+          ["C34", "Ф.И.О."],
+          ["C47", "ФИО"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль Аладдин+РТК",
+        "max_row": 300,
+        "max_column": 17,
+        "formulas": 98,
+        "keyword_headers": [
+          ["H1", "ФИО клиента"],
+          ["J1", "Сотрудник"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль_МНП",
+        "max_row": 300,
+        "max_column": 12,
+        "formulas": 0,
+        "keyword_headers": [
+          ["E1", "Фио абонента"],
+          ["G1", "Сотрудник"]
+        ],
+        "personal_samples": []
+      },
+      {
+        "title": "Проверки ТхВ",
+        "max_row": 704,
+        "max_column": 27,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Буфер ВМР ",
+        "max_row": 1000,
+        "max_column": 84,
+        "formulas": 1104,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Контроль_Сим",
+        "max_row": 19,
+        "max_column": 43,
+        "formulas": 98,
+        "keyword_headers": [],
+        "personal_samples": []
+      }
+    ]
+  },
+  {
+    "file": "Комбо НСК .xlsx",
+    "sheets": [
+      {
+        "title": "Combo 35%",
+        "max_row": 12,
+        "max_column": 18,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Combo 30%",
+        "max_row": 34,
+        "max_column": 21,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "infinix 30%",
+        "max_row": 12,
+        "max_column": 11,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Cток смартфонов",
+        "max_row": 45,
+        "max_column": 16,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      }
+    ]
+  },
+  {
+    "file": "Единый Калькулятор Combo .xlsx",
+    "sheets": [
+      {
+        "title": "Исходные данные",
+        "max_row": 506,
+        "max_column": 27,
+        "formulas": 4,
+        "keyword_headers": [],
+        "personal_samples": [["A1", "Бренд Смартфона"]]
+      },
+      {
+        "title": "Dash",
+        "max_row": 15,
+        "max_column": 12,
+        "formulas": 12,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "КАЛЬКУЛЯТОР КОМБО V2.1",
+        "max_row": 14,
+        "max_column": 23,
+        "formulas": 55,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "КАЛЬКУЛЯТОР КОМБО Единый  (копи",
+        "max_row": 1015,
+        "max_column": 48,
+        "formulas": 60,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "КАЛЬКУЛЯТОР КОМБО Единый ",
+        "max_row": 15,
+        "max_column": 34,
+        "formulas": 36,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Список моделей в Combo ",
+        "max_row": 1730,
+        "max_column": 20,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Лист16",
+        "max_row": 1,
+        "max_column": 1,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      }
+    ]
+  },
+  {
+    "file": "НР_ Обновленная мотивация Т2 15.10.2026.xlsx",
+    "sheets": [
+      {
+        "title": "Мотивация с 15.10.2026",
+        "max_row": 143,
+        "max_column": 28,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": [
+          ["A9", "Мотивация Стажера"],
+          ["A22", "Мой Онлайн"],
+          ["A111", "Установка Антивирус Касперский"],
+          ["A128", "Яндекс Сплит"]
+        ]
+      },
+      {
+        "title": "Бонус SQI (ССП)",
+        "max_row": 164,
+        "max_column": 12,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": [
+          ["A31", "Мотивация Стажера"],
+          ["A44", "Мой Онлайн"],
+          ["A133", "Установка Антивирус Касперский"],
+          ["A150", "Яндекс Сплит"]
+        ]
+      },
+      {
+        "title": "ВМР",
+        "max_row": 41,
+        "max_column": 5,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": []
+      },
+      {
+        "title": "Мотивация Наставников",
+        "max_row": 959,
+        "max_column": 10,
+        "formulas": 0,
+        "keyword_headers": [],
+        "personal_samples": [
+          ["B2", "Мотивация Наставника"],
+          ["B5", "Бонус Наставника"]
+        ]
+      }
+    ]
+  }
+]

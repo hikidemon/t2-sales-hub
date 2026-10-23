@@ -1,0 +1,8 @@
+﻿packages:
+  - apps/*
+  - packages/*
+
+# pnpm 11+ reads build approvals from pnpm-workspace.yaml via 'allowBuilds'.
+# Only esbuild (required by Vite) is allowed to run install scripts.
+allowBuilds:
+  esbuild: true

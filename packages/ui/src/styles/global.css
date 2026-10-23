@@ -1,0 +1,189 @@
+/**
+ * @t2-sales-hub/ui global styles.
+ *
+ * Load order in the app:
+ *   1. `@t2-sales-hub/ui/styles.css` (this file — design tokens as CSS custom properties)
+ *   2. Tailwind layers via the app's `globals.css` (`@tailwind base/components/utilities`)
+ *
+ * The palette follows the official T2 brand guide (brand.t2.ru):
+ *   primary   — black, white, magenta #FF3495
+ *   additional— lime #A7FC00, electric blue #00BFFF
+ *   text      — #1F2229 on light surfaces, #6B717F for muted copy
+ *
+ * The light theme is the default: it is the T2 default surface. The dark
+ * theme is available through `[data-theme='dark']`.
+ *
+ * Colours are stored as "R G B" channels so that Tailwind's opacity
+ * modifiers (e.g. `bg-background-card/80`) work correctly.
+ */
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  /* Backgrounds */
+  --color-background-primary: 245 245 247; /* #f5f5f7 — verified on t2.ru */
+  --color-background-secondary: 255 255 255; /* #ffffff */
+  --color-background-tertiary: 235 235 238; /* #ebebee */
+  --color-background-card: 255 255 255; /* #ffffff */
+  --color-background-card-hover: 245 245 247; /* #f5f5f7 */
+
+  /* Text */
+  --color-text-primary: 31 34 41; /* #1f2229 — verified on t2.ru */
+  --color-text-secondary: 79 84 97; /* #4f5461 */
+  --color-text-tertiary: 107 113 127; /* #6b717f — verified on t2.ru */
+  --color-text-muted: 139 144 156; /* #8b909c */
+  --color-text-inverse: 255 255 255; /* #ffffff */
+  --color-text-on-brand: 255 255 255; /* #ffffff */
+
+  /* Borders */
+  --color-border-primary: 214 216 222; /* #d6d8de */
+  --color-border-secondary: 235 235 238; /* #ebebee */
+  --color-border-accent: 255 52 149; /* #ff3495 */
+  --color-border-focus: 255 52 149; /* #ff3495 */
+
+  /* Status: success */
+  --color-success-400: 74 222 128; /* #4ade80 */
+  --color-success-500: 34 197 94; /* #22c55e */
+  --color-success-600: 22 163 74; /* #16a34a */
+  --color-success-bg: 220 252 231; /* #dcfce7 */
+  --color-success-border: 134 239 172; /* #86efac */
+
+  /* Status: warning */
+  --color-warning-400: 251 191 36; /* #fbbf24 */
+  --color-warning-500: 245 158 11; /* #f59e0b */
+  --color-warning-600: 217 119 6; /* #d97706 */
+  --color-warning-bg: 254 243 199; /* #fef3c7 */
+  --color-warning-border: 252 211 77; /* #fcd34d */
+
+  /* Status: danger */
+  --color-danger-400: 248 113 113; /* #f87171 */
+  --color-danger-500: 239 68 68; /* #ef4444 */
+  --color-danger-600: 220 38 38; /* #dc2626 */
+  --color-danger-700: 185 28 28; /* #b91c1c */
+  --color-danger-bg: 254 226 226; /* #fee2e2 */
+  --color-danger-border: 252 165 165; /* #fca5a5 */
+
+  /* Status: info */
+  --color-info-400: 96 165 250; /* #60a5fa */
+  --color-info-500: 59 130 246; /* #3b82f6 */
+  --color-info-600: 37 99 235; /* #2563eb */
+  --color-info-bg: 219 234 254; /* #dbeafe */
+  --color-info-border: 147 197 253; /* #93c5fd */
+
+  /* Brand accents (exposed as variables for the glass and neo layers) */
+  --color-brand-500: 255 52 149; /* #ff3495 */
+  --color-lime-500: 167 252 0; /* #a7fc00 */
+  --color-electric-500: 0 191 255; /* #00bfff */
+
+  /* Glass layer */
+  --color-glass-surface: 255 255 255; /* #ffffff */
+  --color-glass-alpha: 0.62;
+  --color-glass-border: 31 34 41; /* #1f2229 */
+  --color-glass-border-alpha: 0.08;
+  --color-glass-highlight: 255 255 255; /* #ffffff */
+  --color-glass-highlight-alpha: 0.9;
+
+  /* Bento geometry, from the T2 system guide:
+     margin X*0.02, gutter X*0.01, corner radius X*0.04, inner padding X*0.04 */
+  --bento-margin: 0.5rem;
+  --bento-gutter: 0.25rem;
+  --bento-radius: 1rem;
+  --bento-padding: 1rem;
+
+  /* Type scale from the brand guide */
+  --font-size-h1: clamp(2rem, 3.66vw, 3.75rem);
+  --font-size-h2: clamp(1.375rem, 1.83vw, 1.875rem);
+  --font-size-h3: 1.6875rem;
+  --font-size-h4: clamp(1rem, 1.39vw, 1.25rem);
+}
+
+/*
+ * Dark theme. Not the T2 default surface, but available for a dark room
+ * or an OLED device. The accents stay identical so the brand reads the same.
+ */
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-background-primary: 13 14 18; /* #0d0e12 */
+  --color-background-secondary: 31 34 41; /* #1f2229 */
+  --color-background-tertiary: 40 43 51; /* #282b33 */
+  --color-background-card: 31 34 41; /* #1f2229 */
+  --color-background-card-hover: 40 43 51; /* #282b33 */
+
+  --color-text-primary: 250 250 250; /* #fafafa */
+  --color-text-secondary: 212 216 222; /* #d4d8de */
+  --color-text-tertiary: 161 164 176; /* #a1a4b0 */
+  --color-text-muted: 139 144 156; /* #8b909c */
+  --color-text-inverse: 13 14 18; /* #0d0e12 */
+  --color-text-on-brand: 255 255 255; /* #ffffff */
+
+  --color-border-primary: 58 62 72; /* #3a3e48 */
+  --color-border-secondary: 40 43 51; /* #282b33 */
+  --color-border-accent: 255 52 149; /* #ff3495 */
+  --color-border-focus: 255 52 149; /* #ff3495 */
+
+  --color-success-bg: 20 83 45; /* #14532d */
+  --color-success-border: 22 101 52; /* #166534 */
+  --color-warning-bg: 120 53 15; /* #78350f */
+  --color-warning-border: 146 64 14; /* #92400e */
+  --color-danger-bg: 127 29 29; /* #7f1d1d */
+  --color-danger-border: 153 27 27; /* #991b1b */
+  --color-info-bg: 30 58 95; /* #1e3a5f */
+  --color-info-border: 30 64 175; /* #1e40af */
+
+  --color-glass-surface: 31 34 41; /* #1f2229 */
+  --color-glass-alpha: 0.72;
+  --color-glass-border: 250 250 250; /* #fafafa */
+  --color-glass-border-alpha: 0.1;
+  --color-glass-highlight: 250 250 250; /* #fafafa */
+  --color-glass-highlight-alpha: 0.16;
+}
+
+/* Typography base */
+html {
+  font-family: var(
+    --font-sans,
+    'T2 Rooftop',
+    'Rooftop',
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif
+  );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--color-background-primary));
+  color: rgb(var(--color-text-primary));
+}
+
+/* Visible keyboard focus, consistent across interactive elements */
+:focus-visible {
+  outline: 2px solid rgb(var(--color-border-focus));
+  outline-offset: 2px;
+}
+
+/* Numeric tabular figures helper for financial data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

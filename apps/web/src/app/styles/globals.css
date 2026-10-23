@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global base layer rules.
+ * Design tokens (CSS custom properties) come from `@t2-sales-hub/ui/styles.css`
+ * which must be imported BEFORE this file (see src/main.tsx).
+ */
+
+@layer base {
+  html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    /* Prevent accidental horizontal scrolling on small screens */
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Interactive elements: consistent focus ring from tokens */
+  button,
+  a,
+  [role='button'] {
+    &:focus-visible {
+      outline: 2px solid rgb(var(--color-border-focus));
+      outline-offset: 2px;
+    }
+  }
+
+  /* Softer default scrollbar on dark surfaces */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--color-border-primary)) transparent;
+  }
+}
+
+@layer utilities {
+  /* Safe-area helpers for notched phones (bottom nav, main padding) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .pl-safe {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .pr-safe {
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /**
+   * Glassmorphism surface.
+   *
+   * A translucent layer over a blurred backdrop with a hairline border and
+   * a top-edge highlight — the highlight is what makes the surface read as
+   * glass rather than as a semi-transparent rectangle.
+   */
+  .glass-surface {
+    background-color: rgb(var(--color-glass-surface) / var(--color-glass-alpha));
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgb(var(--color-glass-border) / var(--color-glass-border-alpha));
+    box-shadow:
+      inset 0 1px 0 0 rgb(var(--color-glass-highlight) / var(--color-glass-highlight-alpha)),
+      0 8px 32px 0 rgb(31 34 41 / 0.1);
+  }
+
+  /** A stronger glass variant for surfaces that sit above other glass. */
+  .glass-surface-strong {
+    background-color: rgb(var(--color-glass-surface) / calc(var(--color-glass-alpha) + 0.2));
+    backdrop-filter: blur(28px) saturate(200%);
+    -webkit-backdrop-filter: blur(28px) saturate(200%);
+    border: 1px solid rgb(var(--color-glass-border) / calc(var(--color-glass-border-alpha) + 0.04));
+    box-shadow:
+      inset 0 1px 0 0 rgb(var(--color-glass-highlight) / var(--color-glass-highlight-alpha)),
+      0 16px 48px 0 rgb(31 34 41 / 0.14);
+  }
+
+  /**
+   * Neo accent block.
+   *
+   * A hard-edged offset shadow with no blur — the T2 bento block read as a
+   * physical cut-out rather than a floating card.
+   */
+  .neo-block {
+    border: 2px solid rgb(var(--color-text-primary));
+    box-shadow: 4px 4px 0 0 rgb(var(--color-text-primary));
+  }
+
+  .neo-block-brand {
+    border: 2px solid rgb(var(--color-text-primary));
+    box-shadow: 4px 4px 0 0 rgb(var(--color-brand-500));
+  }
+
+  .neo-block-lime {
+    border: 2px solid rgb(var(--color-text-primary));
+    box-shadow: 4px 4px 0 0 rgb(var(--color-lime-500));
+  }
+
+  /** Pressed state for a neo block — the offset collapses into the surface. */
+  .neo-block:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 0 rgb(var(--color-text-primary));
+  }
+
+  /**
+   * Bento grid helper.
+   * The T2 system derives the gutter from the smaller side of the format
+   * (X × 0.01) and the outer margin from X × 0.02.
+   */
+  .bento-grid {
+    display: grid;
+    gap: var(--bento-gutter);
+  }
+
+  /** T2 heading typography — the wide grotesque at ExtraBold. */
+  .font-display {
+    font-family: var(
+      --font-display,
+      'T2 Halvar Breit',
+      'Halvar Breitschrift',
+      Inter,
+      system-ui,
+      sans-serif
+    );
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+}

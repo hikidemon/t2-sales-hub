@@ -1,0 +1,30 @@
+{
+  "name": "t2-sales-hub",
+  "version": "0.0.0",
+  "private": true,
+  "description": "T2 Sales Hub — Employee Motivation Portal (demo)",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @t2-sales-hub/web --filter @t2-sales-hub/api build",
+    "dev": "pnpm --parallel --filter @t2-sales-hub/web --filter @t2-sales-hub/api dev",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint": "pnpm --filter @t2-sales-hub/web --filter @t2-sales-hub/api --filter @t2-sales-hub/ui --filter @t2-sales-hub/core lint",
+    "test": "pnpm --filter @t2-sales-hub/web --filter @t2-sales-hub/api --filter @t2-sales-hub/ui --filter @t2-sales-hub/core test",
+    "typecheck": "pnpm --filter @t2-sales-hub/web --filter @t2-sales-hub/api --filter @t2-sales-hub/ui --filter @t2-sales-hub/core typecheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "prettier": "^3.3.0",
+    "prettier-plugin-packagejson": "^2.5.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
