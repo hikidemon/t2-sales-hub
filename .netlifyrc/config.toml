@@ -1,0 +1,10 @@
+[config]
+site = "https://t2-sales-hub.netlify.app"
+
+[config.directory]
+branch = "master"
+public_folder = "dist"
+
+[config.build]
+command = "pnpm run build"
+publish = "dist"
