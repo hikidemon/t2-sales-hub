@@ -1,8 +1,9 @@
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import { AdminPage } from '@/pages/admin';
+import { LoginPage } from '@/pages/login';
 import { HomePage } from '@/pages/home';
-import { RootLayout } from '../layouts/RootLayout';
+import { RootLayout } from '@/layouts/RootLayout';
 
 const router = createBrowserRouter([
   {
@@ -14,13 +15,14 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        // The page itself checks the role and shows the access notice
-        // when the user is not an administrator.
+        path: 'login',
+        element: <LoginPage />,
+      },
+      {
         path: 'admin',
         element: <AdminPage />,
       },
       {
-        // Unknown routes redirect to the only existing page for now.
         path: '*',
         element: <Navigate to="/" replace />,
       },

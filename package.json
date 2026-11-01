@@ -15,10 +15,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
+    "@wdio/browser-runner": "^10.1.0",
+    "@wdio/cli": "^10.1.0",
+    "@wdio/local-runner": "^10.1.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.0",
+    "playwright": "^1.64.1",
     "prettier": "^3.3.0",
     "prettier-plugin-packagejson": "^2.5.0",
+    "selenium": "^2.20.0",
     "typescript": "^5.5.0",
     "typescript-eslint": "^8.0.0"
   },
